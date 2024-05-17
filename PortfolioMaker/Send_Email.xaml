@@ -1,0 +1,306 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Template_Midterm" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="dr_student_in" Type="InArgument(sd:DataRow)" />
+    <x:Property Name="str_mainpath_in" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1233,3902</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="1208,3837" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="bool_material_exists" />
+      <Variable x:TypeArguments="s:String[]" Name="strarr_portfolios" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="1146,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">
+          <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">strarr_portfolios</CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">
+          <CSharpValue x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">Directory.GetFiles(string.Format(@"{0}\students\{1}\", str_mainpath_in, dr_student_in["StudentIDASU"].ToString()), "*.pdf")</CSharpValue>
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <If sap:VirtualizedContainerService.HintSize="1146,3635" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Condition>
+        <InArgument x:TypeArguments="x:Boolean">
+          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">strarr_portfolios.Length &gt; 0</CSharpValue>
+        </InArgument>
+      </If.Condition>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1112,3374" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="1050,3289" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,3049" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.gmail.com/" Version="V3" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Compose'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/#inbox" CvElementArea="14, 216, 145, 62" CvTextArea="71, 240, 64, 16" CvTextArgument="Compose" CvType="Button" DesignTimeRectangle="16, 219, 142, 56" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Compose' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Compose' aria-role='button' tag='DIV' type='' class='T-I T-I-KE L3' check:innerText='Compose' /&gt;" Guid="1f4ce69d-be0a-458a-807a-093039ec4d3d" InformativeScreenshot="876a539ab701478cc6b935d38f32163d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Recipients'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" DesignTimeRectangle="1268, 521, 60, 21" DesignTimeScaleFactor="1" Guid="3bb44432-35fc-4678-98d5-18896a4911a7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAVCAYAAAAaX42MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMzSURBVFhH7VZda+JAFN0fHVGpIkF2qaVIqdKliLRihVKsWKF9q4KChVaIkIJ5cEGhPuRBwTzkYV5O72QmJvF7qVuh2wNBZ+4wmXPvPSfzA/8Zvgl/dXwT/urYQJjBtixM6bGZnNoSvYqKs6exHC1i8JCGmm9jKsefhdWEzTbOkiEo4SgiB+L3tGHK4GbohRBSa9ZzwqmCtiPCFgZdA+YWRVlBeIByIoT0w4hqLMBG90iH4ygP5cQGbCK8W+i4CB/hcYvXLSds1pEK/8azLccSpvGCnkzjdKjN/gsEs+wSZhMdj5UrFGtN9CfeemYa0IaWHBHYGP3WHYqlK1RbfYz9Wzuw8NYR8XJD96rJTPS6tzgNq7hoadAMeqcMLcOKCo9QPQwhdl5H33cmPxYrGMwyj6snpNNkBsVGHdX8ESJ0qGtDHMdsHEEp6M5/2DqKySjU7C2anTqKWRVK4hK6m/BZ/BJV2kvEc9D42SZcenHaO4RIUoV63sZq51inYctA+ThK2qWNDjModwaY+lK3DWElcY2+GDqYPmWgHN7hjf77Cb/VfiFGevYaysZznhJWGzgjHlfyL3PxqO/9H21pH5g9olajlqEM+7O+VYXlgWdgL8iFM2hTZTzCJh6PyS8q1I5d72kWqIpZ7uIiftEVWyzHDgl7sKEV4ojdiJptQzgY5/DWzBP+mSWdkz4Dz4PhEX4VOyzHBwmz1ytEqB17cuzC34aLhLQFwrEbQwxcOGZ4SSv9e1loZ0PIdeashrljEU+3gmZiT0Y+Y/tohZmBIv8s1fqz7ySziBCfky8e1HjLNWcGYTbSpPcgYSWcRnXoKm9MuqMOIZL8nP7k2Z2cIxfHhDjYCPdU1bMnMeFo3x8nE+NnyXVdxpywivKfuaQtweqWnl083IdM4kbzHNBxTpo/iENNkIOW6mRyQcKpCjkqrYkkVOGiJ3cYSP5+wlwuvQp38Shi0nHVkh4wKRHnTszjdJaK4Ysz9CtkbPycx3USwWpsYVrrrpby6rn23rl8TZCwBLPXX2M3xtnabzDHX5jWbuFIojSn8U/AHggL11UczcmpT8ReKsxlslYF/xB7a+n9AHgHvz2mcloEk0MAAAAASUVORK5CYII=" InformativeScreenshot="9ded0c64d8df34403a17ee85435d9295.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Recipients'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" DesignTimeRectangle="1271, 483, 70, 20" DesignTimeScaleFactor="1" Guid="9388ea05-874f-48a7-93e8-5751a3bda05f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAUCAYAAAAwaEt4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO4SURBVFhH7ZbRSypBFMbvH71hkSGLFBayxE2KyyIpJkRkVGBvKhQolLCBgj74sEE+7INB+7AP8/LdMzuzu2O7m1aXbg9+sOh4zp6Z+c05Z/yFlRK1ApOiFZgUfR+YpyaMvImuK8cLZN8Y0MtdvMrxd0sB46BVXIOWUZ8NWlwbtiddviIOpliB9QEwu1Xr34BxbVhjB0wOl1EMjNl38erK52WCZmkLWtn6UNAfp2EFWrFNO1xeMTDHQzkM9HQFPVPBQA7hTmF1GqjVG2g9TuMnymYY+PYTXPZtvAZEmYPRI439gQv7cQyHMcyGbZxz37sJZgp95oxhPSnpRXEnd1ciboovexmgdXGC2vUDnuWrvu3iAFq+gttHCyMnXFA4t+ofaEkwJxjx704bxuYGpXgb97RIs7gBbV85icBeJmgdaS9cwZa23RDwAMcZHca+Dr10EvnmTzGS63Y6e9Cq8ji8AWp5KutSA7f9NmolHVqOYskS930LO9gtmrjsSHvGxD3ZZ70j6DmKzdtCXsdhb0ZvMIzqVAmFI4L8gFZ1D+uZg7n+934pTS3UCmvInk3IzmCV17B7oyakjUuym32+G2HfvvYxSHH7BsEmewzMW18X3RL/beqPVDDP1zvIUr+JWp2He5pLl+/7vjmC6o+4gr1IyrFS4vPvoCmm8mX3rmCF2bSo+eYM1O5suSAebAtmx4JFKRk857QZAU5OllbICRlz+eQPQrG+Ca0kbqIIjFiXcTE/722VsiLmG2lQpUPsyMXEwIhD0AoVtPpj2C9erIemlhKjYFmeruEbAoxRpprkdak+PY6e2/fQWhpMgq+ygbdgtqnkYvPejD8JhsvFc596Vpn+FvBSyx+hqzi802NEuops4JrgNJdwytRAhbh9C6djOZSaOVN43CUGJu4rNmgp37m3ON2wLAKF834ODPPULJE9px4t6P3m63bxm8ojgGFTrWv7TTwHEV0LxwTjXNonZxRctRMMg7/PEyqhx8z5vjzApFh+PyKpm/V4iVH2hv+B2BRNWuthT/ywFJh8A5NgLmbBpIM5HgZdS4CJkmARGJLTMYh2U9J20P3DOz7v8KLTG8HkviJ71rfzW0DaY2B26Jqs0I0X+FIsaqbBUuc362F0wW8O7rtFn9R464MUX6E5MGyCc7okeN8MfvOGp9A317BON5X/WWxgFHV3FczyYp64tfwSSdAiuwAjewzzFvgq+ohvgqKyD8Tg8ds3IeCnwHxdKc33B2kFJkX/CczP1wpMilZgEgX8BbTUe2uk3R1SAAAAAElFTkSuQmCC" InformativeScreenshot="92252688ff18b3d0c17f3625a0a7dc10.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">dr_student_in["Email"].ToString()</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'chrome.exe Inbox'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=lqrsmCBTbqCWHPnQHphtPZnGMtjXwJDFhQGVzJcvzxffgjQtjTvlqhkBwWnCbGRfBsPmNNwFMdxFBKDXz" DesignTimeRectangle="1348, 1000, 29, 32" DesignTimeScaleFactor="1" Guid="a908a6b3-a083-431c-abfe-2082e861da09" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEOSURBVEhLY+AOv/CfGlgn79r/eXve/CcGUM1SGDYsvP5/1/mPUOOxA6pbCsN5sx////P3H9QaVEAzS0HYu/nO/zeffkOtQgCaWgrCmjlX/9948h1qHQTQ3FIQDmi7+//Xb0RQ08VSEM6d9RhqJR0tBeFd5z/R31LTkhv0txSEVx19T39L7atv0d9SEB61lKaYKEunbHv9/+DVz1gxSA6bHnyYKEulEi//v/QAtfwEAZAYSA6bHnyY6OBFt5hcC0GYpDiFWUyJhSBMckICWUaJhSBMsqXUwKOW0gwPSIFP96rNpHgAKnG6N1fo3jBzrLlF3yaoXv61/68/orbyaWqpZxOduxVZMx7h6ED9/w8ATlOJpEJqKWsAAAAASUVORK5CYII=" InformativeScreenshot="64dbfbe17447b4aacd41bd1b417d73a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT :tj'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" DesignTimeRectangle="1269, 520, 57, 24" DesignTimeScaleFactor="1" Guid="84573203-89fa-40e8-ac10-33a9351de274" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAYCAYAAABA6FUWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM2SURBVFhH7VZBa+JAGN0frahUkSC71FKkVOlSRFqxQilWrNDeqmDBQitESMEcXFCohxwUzCGHubz9JjMxEw0q3daFtg+CmfnGybzv+95LfuAL4JvkZ8E3yc+Cr06SwbFtzOlymJzaEoO6hpPHqRytYnSXg1bqYi7HH41wklYXJ5koIrEE4nvi97htyeBmGOUosmvWc5LZsv5OJG2M+iasNYUIITlCLR1F7m5CtRRgk1vkYinUxnJiAzaRfF8YOIsd4H7N41ZJWi1kY7/x5MixhGU+YyDTNR/ri3uBYDY9kmxm4L5+gUqzg+HMX88sE/rYliMCm2L4cINK9QKNhyGm6tYubLz2RLzWNvyqMQuD/jWOYxrOHnToJj1ThlSEVHKCxn4UydMWhso5VKxWKphNHteOSHeZPCrtFhqlA8TpIJemOILVPkCkbLj3cAxUMglohWt0ei1UChoi6XMYXpIX8XM0aC8RL0LnZ5txWaVo7yjiGQ3aaRdhThCuSdtE7TBBWqQ/7+dR640wV1K0DclI+hJDMXQxf8wjsn+DV7pXSb42fyFJ+vQbx8FTiZLUHLkjHo+UnpfiCeX5b2lXBcyZUBtRO1Am1exuVUl5yAXYM4qxPLpUAZ+khftD0n+dWq3vX50yVavA3VfEz/pii3D8I0kfDvRyCskrUZttSAbjHP6aZZI/C6Rb0lvgujN9ki9ih3C8gSR7uUCcWm0gxx7UFlsloa+QTF6ZYuDBNbRzWqnuZaNbiKLYW7IL5o1FPPcQNAdnNlHM6S2VZCYq/BXSHC7eY8wmEnxOPmzU5O3UWYjcaudIv0GSkVgOjbGnpCnpiDqBiPGzqQlzekVXCq6RcLAJbql6J49iwtWyGicj4mcp9j2WnKSG2p+lRCkIb9fFx4B3kdCvdN+5XMej+b0UtDQ5X7VFRhUkma2TE9KaeFoT7nd0g5HkrJLkUhjUufsmkJROqVWNgNGIOHdQHqez1E0lzjCskznxcx62qMFXscF41n3Wyc++td984WuCJCWYs/4TcmOchb4jObY0nveF2+7VJc1+IHZMUrhlxNWQnNoBdl5JLoG1Hf4B+C/tumt8k/wcAP4Cdk5U4AFv+p0AAAAASUVORK5CYII=" InformativeScreenshot="c32acb5bccba1b5703056dd47279b2e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">string.Format("Student Portfolio - {0} {1}", dr_student_in["Semester"].ToString() == "1" ? "Fall" : "Spring", DateTime.Now.Year)</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                  </uix:NTypeInto>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Keyboard Shortcuts 'chrome.exe Inbox'" sap:VirtualizedContainerService.HintSize="954,231" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_23" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Shortcuts="[d(hk)][k(tab)][u(hk)]" Version="V3">
+                    <uix:NKeyboardShortcuts.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQWhbknpXXstmGcZQlxtrkSWlVxwJwpZLkWVLncfVJrvZcNZzmXVQdJgmlpVQBwxDKgV" DesignTimeRectangle="1270, 522, 119, 19" DesignTimeScaleFactor="1" Guid="f53cd919-5d1f-415d-999e-f4eb95378ee6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAATCAYAAACqXJLGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASnSURBVGhD7Vgp06NAEN3fghqHi8PhxuFwuChcHA7HL4gbh8Oh4nA4HA6Hw+Fwb3uG++Y7Vmwqr4oKYY4+Xk93wx988Lb4kPvG+JD7xviQ+8bYJbepa9R0Nd3/30WF14NDZN3fN0KTC9i6Bk3T4F+wLxMcj1el7ovwDu69UKt/P8ea3PKFB2eknI7bjX7ZDW5cdoOEukCalT8kvULkXDP+CpoyQ1rsu6SKHOXs8WK4WR6mZn0LK1+0dj1e1+nJfA1ONJJr+8m/IreAMBkJm1hdRnCYCVF0/zMfmhORGT/B75KryDvYTI175LQuG9V1hTx0wAwf2U+idOWLDL7moOPqEqbk/jbm5FZEpPZAsjC4zBJkZdOeEHGHxn3EaaqeUfiiSDOo2x4bp7suEoRBgCBMUNTlmly5JhIIAoEoLWbRWxetrH4PEWWDQ+VY7HNod4GUdNo6wNvkFwgpQwXDY7IjCUm+3H++T58ZmlLKF0hI+NIXUnaaCtw1Dj+W9xMbqgyRINuDEHE+J3JK7joD7et0BYuTWyK0NJiPCPmWk14PcFNXqZrzvlZsROsioktyLtNteGGMOPRgmzZsPiG3jHHXdUpJEZI4hGfrYLS+zx/SAdyyYbkBoqgd16yQ6KExqllclg/dVDpt1fF9cjsdmgwBEa3bHsIogvBs6Ixs6hRQ6y2LdHbhB0QmCV76or1M6DLlq3tBnpGm3WkvDjeIEIU+XJJjktA+8KfkzvQ80ekK1jW3ziCcG5iqSy5EMj9FS+LowTG5NdXwpVIy1Q8NR4PUW5QC6XgKMq9LIdIB2j2e6EEyyWFhVyq2yRuxHm9Q0DPGPKQkogwtMErb00wjA7KXqdZTCpdzZzjzRZPCY9agpwI98w0Dz7z9u0fumU5XsCa3R1MijwVci6LTnNSmr5Ir7+3xFLaoEA9pWa434alUNl7irsHoPDB1QIt5zb5E7qyh0qAPDVW3V6qmjqhiCkAiVN6q/ZcTCGe+2LSdHgcMdhfM2+Se67SEymBDBqHr8TogdwCdLN8YHH1qkMSS3Nn8FikZNZJrwPFkTVpcr7UDWnyD3N3xveaOThjZFZPY3fVXyN2wvYxssK7YH5J7oNMKTd8s9lczJ7fJAtzMJzoaB8yMu0JuOpmTP2Hwtj6OmNQ7kvY0xhS7hX9Lbo2Xq+EeL5JdEYKzgKw7WH/mC2m7sfRng8QjezqGtsk91+kK5idXFnH5KhTmY16vKVrMiSBpEDULo8Jt1+kO4SQ7YWpwBqOJvMXrlWqwhpordab6QvOHGVKmMb5+XSKX0tBeLTojv0k8MCo96bBBa4PZZatDcme+WAa67B3mttcU+CZz0b8Kb5N7rtMVrNPy8BGjr0/UxT7TMTqbHIIUlmO9UvLEc0Z1zOQwbxwBvdI404ju9mQ0xm+6qgcRGTX6q1RfrJjqPGUzp1MwjQ45I5daVzwoAKVOWxyckUsWqA8IbafbdrxSx16D3fUrX2xksSqBL/0pu3nV1dsQ+dgm7ZF7ptMV7Nbc08+PzXKE3kOP5hPUnscTTvc4wkqlL6O14VDHLVwQ/P3Pud/UiXChofrgf8WH3DfGh9y3BfAXkLBhRij8lMwAAAAASUVORK5CYII=" InformativeScreenshot="4f779df0041e1ca2ab4ee6e0c2df88fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NKeyboardShortcuts.Target>
+                  </uix:NKeyboardShortcuts>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DisplayName="Type Into 'INPUT :tj'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" DesignTimeRectangle="1264, 920, 410, 116" DesignTimeScaleFactor="1" Guid="26b6111a-9f73-403d-a996-54ff02beff64" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZoAAAB0CAYAAAC8P/QlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA/gSURBVHhe7d1/cBRlnsfx++v+ub+u9q/bv7fqjqot97buds//ru72bv2B/FBX91wRBRV/YRAF3EMQQWX3lPWyK4gaURRld0UQ42IVERFRFsE7Ebys4ZcJENgYCCQkGsKv7/XnmX5CM3TIMNPPDEner6pvMfN0TzfTM/N8pp/unvyFAQAQEEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQBA0AICiCBgAQFEEDAAiKoAEABEXQAACCImgAAEERNACAoAgaAEBQQYKmofmYVde22sjHd9sPpzTYd+6st2+N2Wp/9dPPBmX95SWTUtsLKW0XbR9tJ20vbTdtPwAYLDINmkVrDtl3q/6U2qEO5iolaPoqbccXo+0JAANdJkGzdttR+96koRcwvkIEja/vT/7C6rZ0xFsaAAaekoKm58Qpq6rZl9pBDqUKGTS+tJ1Pnjodb3kAGDiKDppDR0/Yv87ckdopDrUqR9Cohj+6y213AKikr46esnuXttsls1pd6bba+lJU0DQ0d9uwifWpneFQrHIFjUrbXdsfACrlriXt9u0HWs4qtfXlgoPm+InT9iP2ZM6qcgaNavTc3e51AIBK+NuHvjonaNTWlwsOmnuf55hMfpU7aFR6HQCgEoIGTd2Wo6md3lCvSgSNSq8HgGzt3bfPZs6aZcNHjnA1Y9bDtnfv3ngqJNjQmc54+of7v0jt8IZ6VSpofjClIX51stfS0mL/dtmPXXV2dsatYZ0+fdp+9/rv7fob/sN+fMXl9uD0/7T9+/fHU4eGxqYme+bZhXbr7bfZiNGj7KpRI218dHvBM89YY2NjPFc4+5r32d33TrQbx950Vt0TtQ2F10IhM/raa+za666zhc8960q31UbYnBHsZIAl77eldnZU5YJG9fqGI/ErlK3Vq1f3Bs3Lr7wSt4b1+rJlbn1TH3zQnn3uObv6J9e6Tq67e/Cf/HDixAn7zfz5LmAVMLNmP2I1L7zgSrfVpmmaR/OGMvmB+916Hpg65az698svsynTpsZzZevFxS/Z5cOv7H2/9VeaV48J4eFHZtm1119nra2tcYu522rTXk65nDx50n25UOh/uuVT1/bG8uV2w40/sz9u/KO7P5AUHDT//BAnAPRVlQwavS4hjIk6+GRHUw76EClkvP+rr3cdS92778Ytg5OCQ89bnfkLLy6yr7/5Jp5yhto0TfNo3hBh8/66dW57V//613HLGfOe+pWb9uFHH8Ut2VFw6D32ypIlBZXm1WNCGBkFujr4fGrTtHJQyMx+dI7b3vpMXDniKvvVU0+5+yo9940ffxzPHYb2XseOu8XG3nJzJnuyBQXNnw8fT+3kSq1L5zbZ2Oqontxpw1KmZ11VW3qsu+cbq0mZVkpVMmhUB9qOx69UNnbt2uXe0KvfrbM3Vix3tz/b+lk8NRx1ootfedl1JlqnhtL075JXX+1tG4y0l6Lnvnbd+3FL3zSP5n16wfy4JRvHeo7ZjTeNcUNE7R3njrUfPnzYRl492m6KOp7jx7N9v+l11etbqJDvhb7+L+V6/ylkHpkz261rxco33WuhsNH9ZF1z3U/iR4Sx7I03etel26UqKGhq6g6ldnBF18Rmq2vNG8/r6bZl1WGvzZlafzJaUbctSZlWSlU6aPT6ZOm/nnzCvcH+3NLijs+MvuZqW7Dw3G95WdM69YFOfqjT2rKmsXd/8Ffr8OUl2zSP5tVYfhZ03EVDVdpbka+//tp2f/mlu52kNk0TzavH6HhOVhTmen4r3lzh7vvjZRrO1G35/bLX3TxLf/dbdz8rWqZe30KFfC/09X8JuU5Pe6mzZs92XyTeXLnStS1fscKtN78WvRRm6NBzezTRlwrt1ZRtj+b2BXtSO7hia+YOhcwpa9rSYlXRHk1VXae19ERNRzpsQsr8WdVgDZqsT3XWsJnGqj0NVeibbuiTAvQB0gc6+aFOa8uSQiZ58NevS+Ul2846OJxB2CxYuNANyfjhMp0EoOf5wfoP3H3RbbVpmmheN8QTPTYLrQcP9p504IfkVtfVuXWq3lu71rVp2s3jx7l1t7W1ubYsaB3J7d0fzavHZEkddyHHiTRPqE7+8blzXcisfOstd7+vkHm+psZNH0gKChr9fH1aB1dsLWmOFtrVaVMTbRPWdVnDjrZE0NTb2JXttqm52xoaO23ZyqbE8Noem7fhsNUs3t07z9b6Nqua5qfnalh1i9XuiB7f3GW10eMHa9Bc/+S534CLlTwJIL9CD59pHb5D1+2+2rKkvZP8g7/98QeHk2FcLHXuOtjvFRI0osck75di7i9/4Zb/yf984u4ryHTmnwJVpaGbY8dyf7pCxwY07xPznnT3s6Dl6fUtVIj3QqHHiUIeH9L2r337bXdbB/71HPOrXCGjvdg1761x5fdoS1FQ0PzTtIbUDq7Y8ns0LfUHbUJeOORqp81vVChEsdB13Fq6csNsR3a0xGHTZu7E3p7ccrq1NyQ9XTYzXsawxZ3mz8fqdvP5fysfNPPfOWgf1HemlqalPeZ8pdcnK+o89W1dZ5olS8Nn+pCFpA+S/0Drdl9tWUo7+KvnmVZJWR0c1tlkz9U8H98rbOhM9Jgs1q8TLvQtesbDM+OW3NCctvXbq/7gSrcXv/xyPNXs59Onu8c0bN8et5TGv8aFCvFeKPT/sPmTT846YSWEZctzx0d0xqX+9VXOPRkFjF+vbpeqoKD5m1u2pXZwRdfEfVbbnOv8pbur29av22eX+umvdUVxYNa0we9J1VtVvQ5AHre6at33QfONzY+DatRmTT9lm1bqfpPVKWV6olCZm5s+rPqwNbhAqnzQfHvc57at6dxTdtWmaWmPOV/p9cmCv3bmiXnz4pYzdIxG00IOn2n5+aGS1palSgeNlpEMmkJlETT6pqrrY/QNvblZwwxmBw4csCuuGm533H2Xm67S7eEjRljLV7krv/fs2eMeU3XfpEy+7frXOI32pOY89ljvHpWEeC+c7/9QTj5kNIymocrb7pjg7pd7uKwiQfPXN4b565jDZjdbzZYua+rKrae7uc1GRe25Ia5oj0fDZr5ac3s4Dev02FzQHKlvPrO8eA+mz+m9y704hs7yw6bYkFFlFTR+2CxtiExtmhbymhotPz9U0tqylHbdRH/80FkW11Vo+Cs5dLZx40Z3fCStNM3LYuhsdV3u9U52Ylqu9la2ff553BK9N6PbalOH7+miUj12zXvvxS3F86+x95unn7amKMxEX3o0PfnlJ8R7If//kJT/SwHuZJAAF2/6M70UMqdOnXLH4HS/Esdk9AVCAaPK4stEQUHzd/dkfTZYvV06LbnM+jgETtr6xT4QTlpTMmjiqn1N8w/8oFH5sCklZFR/f98X0fMa+PyHPdmRpLVlKf9KcL8ulZdsy/pKcXXY2jPxJwN8vGmT26PQc02W2jRN/MkAemwpJtx5h3sufkjufz/91K3rpz+74aznrFKbpm3dttXN685GjLbBpMn3uful0HK1DlGg6v5tE263t96udbd9aZpoXt3Pkpbn/w9J/mSR5P9DldXr7/mLlXtDJtpj1v1KhEwIBQVNphdrToyHvaK9l8uT7XW5D5qCYuwWDYP1WO3sxPS5e6xqrj9W1F/QtJr7ODQeTJxAUG817hc8Lp6gUSlgSgkZ1WWP7NQTG/A0HKNjAb6z8d9mV73zjr20eLE7pTeE5DdWrc+Xl2zL+hutTlFOnt4s27dvd8dM1JmpdFttXlanN0+f8ZBdduUVvT9t8+6aM8MlfZUu6hRda6X/QxZ7dVquOnntxejst/x1+tI0zVPOoNHz8+vXdL9uVRYng0gyZHQdzfxnFrj7lQyZilywqbOa0jq44qre5jfmjs+0NB62eTVNNrOuwxrc8FkUAgqXue2mj1D3kU6riaaPrTlomzRdx2Qmahn9BY1fxylr2nzAXRQ6c3NPtHS5uIImi9Lp54PBLePHm64j0Nj0nMcedR2LrpDWBYLTZ8xwFxQORrr4UkNT5b5gc+eunW5Z/uC2hkh0nO585YdR7p8yxYXUl42ln/HoO/FClTNotOeoaX760t8u7b1f6jEyT8vS+1sho9dV9yu9J1ORCzbnrfwqtYMruvJOBnB6emz9qjOnUY+K9nAUHL2i6XWL/XBbf0ETVf5FodHjt7rjPIMvaJ5eVfjxhXz+zVRsZenVpa+5ji//t5zWf/iha69Z9ELcMrgoWCv1EzRPVf+3ex0/2rAhbumfP91ax1KyUOipxb40b9anGOv5aNn5kkEz6f7J1t7e7tav+1kGjZapY2C6fTEMl1Xkgs3t+7tTO7iSa9rufn6CpsFGaXr17jNnpF1g5X7mpvjHF1KVDpqWI8X/JIj/EBVbWdKei37UUZ2pDkrrg+8PTt818Z5B/eOaCo5K/KimOs5R11ztTm5QZ1dI6edP9IOnHR0d8VJKczH8qGZ+2P1h1SrXruGx5Lo1j4JAt7MYNpTk8gfLMZl8BQWN8KOafVclg6bUH9VMvsmLqazpN7fUieg3tbT8MTePdXsyQ+EXnKXPPxOwcGGmPzmTpD3IcbeOP+vPApyvxt12a++JCYNF/i8DaFhw/4EDZTsZYLArOGj4MwF9VyWDJtSfCQCQo0DxJ4v0ngyS0W/dDRUFB43+8Jn+0FZaZzfUq1JB848PuPP3AOCiVnDQSO3m9tQOb6hXpYKGP+UMYCC4oKCRu5/dm9rpDeWqRNBk/YvNABDKBQfN8ROn7UczOTEgWeUOmn+ZscO9DgAwEFxw0Ehrxwn73qQ/pXaCQ7HKGTSXRNv9YLT9AWCgKCpo5NDREzb80V2pneFQq3IFzRVzdrntDgADSdFBIzoTrapmX2qnOJSqHEGjY2Pa3gAw0JQUNF7dlg77/uQvUjvIoVAhg0anMK/dxtllAAauTILGe3HNIftu1dA7dhMiaLQdF0XbEwAGukyDxmtoPmbVta028vHd9sMpDfadO+vtW2PC/PG0i6FKCRptF20fbSdtL203bT8AGCyCBA0AADlm/w+COLfFN/o4AgAAAABJRU5ErkJggg==" InformativeScreenshot="7db928c6412937e397b6ae01c6290146.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">string.Format("Dear {0},\n\nWe've finished composing your UEL student portfolios for the stated semester.\n\nPlease take a look at attached files and let us know if you have any questions or concerns.", dr_student_in["StudentName"].ToString())</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                  </uix:NTypeInto>
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="954,764" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:String">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:String" Name="str_portfolio" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,568" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV :ri'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMvXqvJZtwXZtrdWNQhSVFWkZxwXhFshRJWNhQkltXlXwcwrbFskMgqGPXNRdVSBWWmRxD" CvElementArea="1422, 1004, 18, 23" CvType="Icon" DesignTimeRectangle="1422, 1006, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id=':pj' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id=':ri' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id=':pj' tag='TABLE' /&gt;&lt;webctrl id=':ri' type='' tag='DIV' class='a1 aaA aMZ' aaname='' /&gt;" Guid="8c5812f4-d069-42b2-9d00-c3f178803e62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVEhL7ZTNSsNAFIV9OG3jD4ooYk3Tlu5ENyoSLIWa1pX0ASz+NGmiaLtuwXRnob6AfYQ8Q2oCOTLXUVzYOwVxl29zyclwvmFgZgH/TCpQwgqSJMFj9wk7uV1kljWYlTMEQSD/zgcr6PZ6WMxmcGqauGq1sLm9Bb1gIAxDuUINK8jpe1T+xdtkQkJ/OJSJGlawpGVhdxx0XJeKxZGJ6Xred6aCFYgCUfSz7LeMIxVQxpEKKONgBdrqCmzHwbPvU9lls0mzPxigbdv0fKhgBaVyGTXLQhzHqF80sLaxDqtRRxRFqFSr0I28XDkbVuA93NNtHr+OZfLJy2hE+fXtjUxmwwrETo9OjqmsZp3TuYspvvcPD+Z69FiBYPo+xZ3dhlEq0vnniwXa+bwvqlLwV1KBAuAD6CBBX52ep+wAAAAASUVORK5CYII=" InformativeScreenshot="e164f2b066d395a636505a0321f7a6d5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_3">
+                            <ui:SetToClipboard.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">str_portfolio</CSharpValue>
+                              </InArgument>
+                            </ui:SetToClipboard.Text>
+                          </ui:SetToClipboard>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,202" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_24" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <ui:ForEach.Values>
+                      <InArgument x:TypeArguments="sc:IEnumerable">
+                        <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">strarr_portfolios</CSharpValue>
+                      </InArgument>
+                    </ui:ForEach.Values>
+                  </ui:ForEach>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'chrome.exe Inbox'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" DesignTimeRectangle="1285, 1003, 54, 27" DesignTimeScaleFactor="1" Guid="e38af242-67c6-4b1b-9487-4d02c5cabafb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAbCAYAAAA3d3w1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJcSURBVFhH7VaxbuJAEL0+X8If8AnXUV5HSYXchY4iDc2lcJHODRJKlQYhXeMKIaWAhlCsZBEhHMU6WSAgERaWEehlxrsmPkQCd8Kn88krPaGdtzuzj5kd75eLbw/4H5EJSxsyYWlDJixtyITlazaKOuH7I3IH+HND6wfwgxWMA9wpOC6s7MCcbPHLCHzc6eLw+jPhUmwokI/GAe4UHBVWHbKoLey+C40ypplLuAGZFq8oHVh/LiQurOGQf2+Jy5it1PZgDWcxYQLF5gu6jg9rvMRd046V6xOu7+cw6qPdmoGYQatEvEROd9Ea0n7HQ4v2/7WMuWKK0t5hJB5xM+ZD0DG8NVxPlu1i6CpxM1hsCKQfn7PNI/BQVT5y9SUWyuyH66LfBIVdlJ/RcmQwHr7no9N+Rj7ibz0KD9j3I7VHQBNrsqxh6jyPhK1wo/6YQo/5LbpNntswWRXd20ZN8jl9Div8A5IUppC7cmD0PdgeB6SQzgwFssuSoYxyGUaYyAxabd4rhS2E8+5PZehDfuc3UWEC+Uq8AwoVdINOPTrABnZcmELrltf/i8LKqowoO1/jdnPF1vBgxT6XVYDWVYyvPUGrWWp+TNgEA3Y2nsYajoAxZmNiGRPUGOT9csdzXBs2quYrrLAcKSiLqb3A5tliCYP4ojFFl3m+U2X2cUxYFIM+Kb2f4SOg2qOPM1mSLcW95hGOIEDnR9QsqBlQBvmgu0G8WY/K95gwwv4jgPYPwnua6B1TqNB36NMnlYUC8/rovWP+JuSz7c/3x3G6sJQhE5Y2ZMLShkxYuvCAN7bom3g0/waOAAAAAElFTkSuQmCC" InformativeScreenshot="a092e345b2a9efa4eb8d54ac7a99a46a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Message sent'" sap:VirtualizedContainerService.HintSize="954,347" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="31a10655-23ed-4253-a512-3a4a502d53f0" Timeout="60" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="https://mail.google.com/mail/u/0/#inbox" DesignTimeRectangle="52, 985, 96, 25" DesignTimeScaleFactor="1" Guid="47b6730c-fb2b-41a1-a825-852309198711" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAZCAYAAADOtSsxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVNSURBVGhD7Zf7T5dlGMb7U2rzt9r6tbZqs9lms9nYqlVrluYhc2Qk1Q+UIGGKRCjEMCyQJQLKQcGEErIUSA6JnJPzSWB8OZ+Pu9vnbs+793sCZtlX2ut2je/7XM/7PPdzX/d9vY+PPPrYJnEQODgCBBiOAAGGI0CA4QgQYDgCBBiOAAGGI0CA4SXAG2++JQMDAzI3NyfHjkW7cSA5+TtZWlqSlpZWL86BN0JDP5GUlFTZ/PwWn7xfAfhXUvKLG/f4E09KQ0Ojco4A60Nm5gXNJ3n1xfsVoKurW3p7eyUo6BWL++BgiLhcw9LX1+cmwFNPPyNpaT9IfX2DVFZWSUREpMUhWmJiknI1NTUSdfTLdXGAdVgPnvXZx3D8Pv1tsnK/3bghIR8d0kqj4swcxuAaGxslJzfP7SyeYO6tWxU6NyMzy22vHTt2SlHRT9LU3Kx/eTYcLsEZiJ0zsAZrGe727RoZHx+Xgis/+nQUvwIUF5fI6OioJCWdtrjLl/OVq67+wxJgywtbpampSSYnp/SwBDk/Py/ZObnKMzY9PS3l5b9rsuBI5loc72ODHAp+ampK96GVEQ5hmH/nTq3uOTk5KTMzM1pxvB+f8I0+t7a2yvXrv8rY2Jj09w/I2+/sUt6OkyfjdW5z858aE3vV1tbpPmFhn2se7t3rV0fg/CSUcd4tLS2T2dlZGRoa0jjhORPFc624WM+wvLysYzx77u1XgKysC2o3FRWVOs7B29vbNQg2NQIg0MjIiIR9dthaA7XplJivYnWt3NxLFnc+I1NSUs9a+/jitr64TcrKyuXixWyLiz4Ro4k4HB6hv0k4lWf4M2e+l8XFRRXAxMoaJBF+7779GlNBwRXrHQPOw3xT9eHhR6SwsEi2vbRdz3/3bosWGhx/Ozo6tQjNuwiCO/BszmX2uW8L4kWqEWXf3b1X24dEkwC7APxmDomkzQFjVFFsbJxWEtVFFUZHx1gHITH+OIPtLwdpO4Pjx0/o/qfiE3weihhJMBzzSQoVaWICg4OD2mn2PQDnXFhYUA4bM+uaXNBl9nXa2trUnonPngsDnhnn9z8SgHYl6HPn0rXyqRKqy1MA7AcbsKOurl67gqrCUwmaNsQ20s9n6LurcdnZOZoUbKO7u1tbmWd/AtjjRoCJiQn9jnnGhYebd+zAw0k0XcYtD+8O/fhTXRP78Vzn5s3SBy8Az6YF+fBiS4zZN/35WrF0dna5XbOefW6zgt+vvva6W9VT7SSVcX9c7Ndx6tlmP0DnUdUIQMWSKNP2IDIySr2YuN8/EKzdwJXZ8ICE2Z8NiIFYzHNc3CkVMD09Qyvd07awSGNtD1wA/JbqIyHmwPZN+djgx3l5lzQoqpqbANUXcSRS7YlqgTNJ5lCrcV9EHdUEXr1aqOMkqKqq2uoAYqQq6QysEVAgVC5x8w7zEXPPnn0aJwJxBiyGZzsoMvsHGgEQm3X5nvHb3OxYD1cwnbQeAbDO4OCDbkVqsKYAVA1JMR8d4LkptoF9IBRJ4KDmlsBtBHuBA4jFAdfisCA+qlQ1a/O9oOoRAP7DkEPS3tGh+2GB+fkFmhgTN8nEMuFZe2VlRW84iANvB3N7enp0P75JCM0t0IiPHXGTIRbW4TZmOnctAbBDl8ul/3cyY3Z4CXC/ICA65L39B7wOSVdQAcDcNNbDmY+wr/ZlP/t8bIeOSkhIdJu3c9duXcOf/dix2lxi8BfLeoDF+RL/XxPgvwRC02WmSgEdMDz8d6v7eudhxYYUAKSeTbOsywBL8zX3YcaGFQAY2/NlXxsFG1qA/wMcAQIMR4CAYpP8BWFW9CBiNikkAAAAAElFTkSuQmCC" InformativeScreenshot="b58ff7ff62d9bf5281f8f99bb5947f25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbox (5,100) - mohabfawzy2@gmail.com - Gmail' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAbxSURBVFhHpZZtTFvnFcf9pWuypg3tmjVrGmLeEoMBG2PaJBDb2CkvyQJpvlXtFqRpmrSXT5s67a3pl0nTptXkhdAklEsCbZdG3VsrVe3AhhBCs3ZDi5ZAo21OA5hAOztNmrXhXj9n//M8j415SUe7I/30P+fh+vzPufcasC03YgF3zkzQ0zITrDLAyPshb3ImVEXTQS/NBDn3RmeClcZ0qHIvX6s/9v/HVIPbfjVU1com2kxcra2k6VovqBQM14sIVBpTAbddt/nsoTb2htlUGgWUWcYQ9dWAR0wFOPcgV8r1VMCj8AOfZ59uufzgyWES00a6sUfm8ww0cTZiuPZViLi/Qp1xrohNbV7m3ZiurXChUSzbIIO/QjDKUBlpE4r73BmdhE5ucys4V/X/HoI3h1EsvYFSjTaa9Kmm8W3aSDXPMJGmxkWTNS4BBaoer3ZhCMfSQ/Azh1FMGWU1z5ipxnIA1hq3kDUbaENlJHMxLmul49XljFDqii35LZnwucMZE4XI3khvo41Uzg1lzc1l7aIrOGO0KV3ZupAycWVLWVjbqnC/tNve/h3/nAmboqk2I7mNNpn57jfoxss9ZMYnKR3i5rskZl4la2QXWecqGcGaYn3LQ5JzHpx5BM5kTcNZ70PlS3uMbUYzjYUq1Fb6dknFxDKvr6YbJ3u0JVE8Kah/bBaYdGkqpU8xzNSLZL3jJ/OtChgxbgzhxjDQYbeqoajVXXAbu3M8LzxGzL4fBjO3io1Z39tSRuN1W+nWpTFp8JeYSd8yPqKqZ65R1T4N8qbwdYqOzsprxM0xst6ugZmLDZUOc85aDi3HEOVJGsG74H5hd4u7ZzdVANb+Jq80ZfCsBOv133TLxkein5AXhhmezso1R3ENh4h3K7PhMk1pljJOMXumpMXm7m42ALm6m4S7p1k8+Ys6ury5lN7b7BTMxGP1siFvV/l0UuLROse1eefv4C5xpC7sFdZZJ5lnS8hagtRwiWFzdTdHXScwwIkmTTO9useLIZwUe8RJN177nWy289kPqeJnyTlglNF0rutvdt6QnxFTJ4R5thhm2TgwlINS0NRQ8Yit/HhTsvz4LkpT1rWLth9spL/7yij2cIm4dWmUxuIWudF8MYnbkKTJJF7MTyZguBGGmiEJMSZInS1K2MqMr8JUImSu659/u5piVcWCN4lcnCXXTxNLA7P5dYLKoRH9QlpDRWSeKSSLQW4NaZV1gbCVdu6kUpiWGjuF1C6lj7Q30vkap2zSd/EWlaHpQtgoW7PP+zA0h3WmAEb5wjoDhgowTD7O5uABks7OHUKxk6BAqvjeUz5hxidoMpGi0p/8+zMxiscmProAkzwyB/Ogdgxhl7XKN3CdsJU8v+OvJR2NpNhBqGXuZH2+UQz2n5SbtHRcJycaO38MWD+Ful9dk59JTZ+CGRvlCnMwlyzJBrBecG4Oro/aHB0NRvGxRpqjQQ7gONYgOP/6a0/JZn/+1yyVwLwYKP1A5nP13HkvHhmH9fYWMk+vBw/B9CHBqnOyWE+vM2yOow0tIGPIyPpovQCsdPy8+ioe6rtJjh99QA6YSF0Izg/1/kdee228E4brYLYO2z6I/EGYK6y0Dqzba7MbgZziI/XJTUfqKRsH69E6wXi79ojR9/8hG//pwi0K/jJJm2CYzdeOfUjn/qlevInEu5QYLCFz4CuatTBdK9JqnX5A5hTNUX+WNz1X37rpuTraqJH5kTqRroHwGntE1/nfSgOOi5OWHIaZwEuaDr6m849bsN1aGD+QwWLt/7JUa2CNsPrXGNKcw9HeYN/Y/igxRVrTeRaisH27CPQ8Sa+MvkEX9R3hGL9+lYy/vUJP/P4H5O/wwWiNYkBr//0ytwbuFzIH2H7+f0ZFbaHWosPbKU1hG+ujxKaFhyWkNCT4ZxldwKk/FMHkS8pU6n3YVipZyFlTA/ct/k/ZHg7kFBwOxQraVOOCQyEqBKx8JpXP2ubX2Tze9TDM7hVm9F4YAlaAM605wormxLTl4sAQ9oK2YCzdMP9gkApA/qGgkHCu66XOL7+JZxxdjQHuAathuBqGUNSa2KJbvzB4iPwDtTHZ9EAt5R2sFQznafJY8XNWmR8I0ve7y8mM3I1N71EKrOgqmK4SnM9G7ob5ik83TwcPkbe/NgbIfiAg8vYHpMochvb9Kk9T076VLr+B5xxZxabQu+ZhRe6Kfbxc8+zAIM/YW2F+W/wYxi86Xs4ns28ljL4oMSMrBNdmBPStDGe+758n+G7khv3GhrCfNrT6Re6zPsF5btgn6+q2zTBZobmTzF4QuTNp9q5s/fj1z7H17QKD5Kz/9bYWDNCFAaLQJKCTp/A7PXJHItX7hZFU7wpjtu+OluVvbLP9F5lmWAkTeM7rAAAAAElFTkSuQmCC" InformativeScreenshot="c81a33a36a5e0003f8f59b1f7f06ada5.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="Portfolio Maker" Url="chrome://newtab/" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
