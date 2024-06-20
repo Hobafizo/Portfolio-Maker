@@ -12,7 +12,7 @@
     </InArgument>
   </this:Template_Assignment.str_mainpath_in>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1233,8436</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1232,8323</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -125,7 +125,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Template_Assignment" sap:VirtualizedContainerService.HintSize="784,8371" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Template_Assignment" sap:VirtualizedContainerService.HintSize="784,8258" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="bool_material_exists" />
       <Variable x:TypeArguments="x:String" Default="Assignment" Name="str_material_name" />
@@ -150,33 +150,33 @@
         </InArgument>
       </ui:FileExistsX.Path>
     </ui:FileExistsX>
-    <If sap:VirtualizedContainerService.HintSize="722,8118" sap2010:WorkflowViewState.IdRef="If_5">
+    <If sap:VirtualizedContainerService.HintSize="722,8005" sap2010:WorkflowViewState.IdRef="If_5">
       <If.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">bool_material_exists</CSharpValue>
         </InArgument>
       </If.Condition>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,5753" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,5640" sap2010:WorkflowViewState.IdRef="Sequence_20">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Template.docx - Word" sap:VirtualizedContainerService.HintSize="626,5668" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Template.docx - Word" sap:VirtualizedContainerService.HintSize="626,5552" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,5354" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,5238" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="530,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_26" Shortcuts="[d(hk)][d(ctrl)]f[u(ctrl)][u(hk)]" Version="V3" />
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search document'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,258" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search document'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,250" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CvElementArea="21, 204, 238, 27" CvType="InputBox" DesignTimeRectangle="23, 207, 202, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='MsoCommandBar' name='Navigation' /&gt;&lt;uia cls='NetUITextbox' name='Search document' /&gt;" FuzzyAccuracy="0.7" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' name='Navigation' /&gt;&lt;uia cls='NetUITextbox' name='Search document' role='Edit Box' automationid='' check:text='Search document' /&gt;" Guid="0483894b-3b0f-4bb4-9dec-41d1fe604b8f" InformativeScreenshot="8c0092b8fe09abd2ad0e7d5cfaa19da2.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                     </uix:NTypeInto.Target>
@@ -186,21 +186,21 @@
                       </InArgument>
                     </uix:NTypeInto.Text>
                   </uix:NTypeInto>
-                  <If sap:VirtualizedContainerService.HintSize="530,1099" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If sap:VirtualizedContainerService.HintSize="530,1081" sap2010:WorkflowViewState.IdRef="If_4">
                     <If.Condition>
                       <InArgument x:TypeArguments="x:Boolean">
                         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">int_empty_material_inout &gt; 0</CSharpValue>
                       </InArgument>
                     </If.Condition>
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,634" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,621" sap2010:WorkflowViewState.IdRef="Sequence_17">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,236" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_27" Shortcuts="[d(hk)][k(Enter)][u(hk)][d(hk)][k(Esc)][u(hk)][d(hk)][k(Home)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][d(shift)][k(Left)][u(shift)][u(hk)]" Version="V3" />
-                        <ui:CopySelectedText SendWindowMessages="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Copy Selected Text" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="CopySelectedText_3">
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,228" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_27" Shortcuts="[d(hk)][k(Enter)][u(hk)][d(hk)][k(Esc)][u(hk)][d(hk)][k(Home)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][d(shift)][k(Left)][u(shift)][u(hk)]" Version="V3" />
+                        <ui:CopySelectedText SendWindowMessages="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Copy Selected Text" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CopySelectedText_3">
                           <ui:CopySelectedText.Result>
                             <OutArgument x:TypeArguments="x:String">
                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_26">str_clipboard</CSharpReference>
@@ -217,18 +217,18 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,287" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,290" sap2010:WorkflowViewState.IdRef="Sequence_18">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,202" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_28" Shortcuts="[d(hk)][k(Enter)][u(hk)][d(hk)][k(Esc)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3" />
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,202" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_41" Shortcuts="[d(hk)][k(Enter)][u(hk)][d(hk)][k(Esc)][u(hk)]" Version="V3" />
                       </Sequence>
                     </If.Else>
                   </If>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="530,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_29" Shortcuts="[d(hk)][k(End)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3" />
-                  <Assign sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Assign_12">
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="530,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_29" Shortcuts="[d(hk)][k(Down)][u(hk)]" Version="V3" />
+                  <Assign sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_12">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">str_material_img</CSharpReference>
@@ -240,7 +240,7 @@
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:FileExistsX DisplayName="File Exists" sap:VirtualizedContainerService.HintSize="530,173" sap2010:WorkflowViewState.IdRef="FileExistsX_13">
+                  <ui:FileExistsX DisplayName="File Exists" sap:VirtualizedContainerService.HintSize="530,165" sap2010:WorkflowViewState.IdRef="FileExistsX_13">
                     <ui:FileExistsX.Exists>
                       <OutArgument x:TypeArguments="x:Boolean">
                         <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">bool_material_exists</CSharpReference>
@@ -252,9 +252,9 @@
                       </InArgument>
                     </ui:FileExistsX.Path>
                   </ui:FileExistsX>
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="530,2285" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_5">
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="530,2216" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_5">
                     <ui:InterruptibleWhile.Body>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,2131" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,2070" sap2010:WorkflowViewState.IdRef="Sequence_16">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="sd1:Image" Name="img_material" />
                         </Sequence.Variables>
@@ -263,30 +263,30 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insert'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insert'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CvTextArea="145, 46, 31, 12" CvTextArgument="Insert" CvType="Text" DesignTimeRectangle="132, 41, 57, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUIRibbonTab' name='Insert' /&gt;" FuzzyAccuracy="0.75" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUIRibbonTab' name='Insert' role='Tab Item' automationid='' check:fulltext='Insert' /&gt;" Guid="df74e8b1-0d0b-4d3f-815b-f8df7a50f978" InformativeScreenshot="00125a8ef9b48bcc14ce07f7bc418ec2.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pictures...'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pictures...'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CvTextArea="199, 107, 43, 12" CvTextArgument="Pictures" CvType="Text" DesignTimeRectangle="198, 68, 47, 69" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIChunk' name='Illustrations' /&gt;&lt;uia cls='NetUIRibbonButton' name='Pictures...' /&gt;" FuzzyAccuracy="0.54" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIChunk' name='Illustrations' /&gt;&lt;uia cls='NetUIRibbonButton' name='Pictures...' role='Button' automationid='' check:fulltext='Pictures...' /&gt;" Guid="5b066742-5025-4d1a-9dcc-88b1019fcf17" InformativeScreenshot="a8237e916a2450b18802e10e6e47bc28.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="434,100" sap2010:WorkflowViewState.IdRef="SetToClipboard_3">
+                        <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_3">
                           <ui:SetToClipboard.Text>
                             <InArgument x:TypeArguments="x:String">
                               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">string.Format("""{0}""", str_material_img)</CSharpValue>
                             </InArgument>
                           </ui:SetToClipboard.Text>
                         </ui:SetToClipboard>
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_30" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Format'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_30" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Format'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CvElementArea="601, 39, 80, 26" CvTextArea="621, 46, 40, 12" CvTextArgument="Format" CvType="Button" DesignTimeRectangle="602, 41, 79, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUITabGroup' name='Picture Tools' /&gt;&lt;uia cls='NetUIRibbonTab' name='Format' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia cls='NetUITabGroup' name='Picture Tools' /&gt;&lt;uia cls='NetUIRibbonTab' name='Format' role='Tab Item' automationid='' check:fulltext='Format' /&gt;" Guid="3b610729-0bb1-4727-95c3-3968f76f6ffd" InformativeScreenshot="434b3b2b5932f0c78f01735db4cc6d89.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '9&quot;'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,258" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '9&quot;'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable CvElementArea="1764, 75, 73, 25" CvType="InputBox" DesignTimeRectangle="1766, 78, 52, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUITextbox' name='Shape Height' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUITextbox' name='Shape Height' role='Edit Box' automationid='' /&gt;" Guid="873b9e74-d336-469b-ab45-c73da34de47c" InformativeScreenshot="849729c5c93f0378aeb443ef296f94f7.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
@@ -296,12 +296,12 @@
                             </InArgument>
                           </uix:NTypeInto.Text>
                         </uix:NTypeInto>
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts '7.35&quot;'" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_31" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts '7.35&quot;'" sap:VirtualizedContainerService.HintSize="434,231" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_31" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3">
                           <uix:NKeyboardShortcuts.Target>
                             <uix:TargetAnchorable CvElementArea="1764, 74, 72, 26" CvType="InputBox" DesignTimeRectangle="1766, 78, 52, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUITextbox' name='Shape Height' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' name='Ribbon' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia cls='NetUITextbox' name='Shape Height' role='Edit Box' automationid='' check:text='7.35&amp;quot;' /&gt;" Guid="6a412bfd-6731-4bba-93e4-ccbb1d6b1c45" InformativeScreenshot="d9b8ba29d0b96c6fe2025ab3c73b693a.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                           </uix:NKeyboardShortcuts.Target>
                         </uix:NKeyboardShortcuts>
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'edit Page 5 content'" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_32" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Shortcuts="[d(hk)][k(Right)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'edit Page 5 content'" sap:VirtualizedContainerService.HintSize="434,231" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_32" ScopeIdentifier="bdc687c0-5f7b-4408-94e6-df802a295170" Shortcuts="[d(hk)][k(Right)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
                           <uix:NKeyboardShortcuts.Target>
                             <uix:TargetAnchorable CvTextArea="717, 279, 210, 19" CvTextArgument="FCIS-Credit Hours Programs" CvType="Text" DesignTimeRectangle="623, 276, 358, 750" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='UIA_AutomationId_Word_Content_Page_5' name='Page 5 content' role='edit' /&gt;" FuzzyAccuracy="0.4" FuzzySelectorArgument="&lt;uia automationid='UIA_AutomationId_Word_Content_Page_5' name='Page 5 content' role='edit' /&gt;" Guid="613cbe89-9a07-430a-b069-c1bbbc11ac21" InformativeScreenshot="fe630986da73dad1b1bfbd4aa77d9ec2.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Template.docx - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                           </uix:NKeyboardShortcuts.Target>
